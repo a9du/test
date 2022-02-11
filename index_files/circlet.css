@@ -1,0 +1,635 @@
+/*-----------------------------------------------------------------------------*
+ *  COMPONENT: CIRCLET
+ *-----------------------------------------------------------------------------*
+ *
+ *  Circle container with children positioned along its perimeter.
+ *
+ */
+.circlet-container {
+  position: absolute;
+  top: -150px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 125;
+}
+
+.circlet {
+  position: relative;
+  width: 30rem;
+  height: 30rem;
+  margin: 0;
+  padding: 0;
+  border-radius: 50%;
+  transform: rotate(270deg);
+}
+.circlet > * {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 12em;
+  height: 12em;
+  margin: -6em;
+}
+.circlet > :nth-of-type(1) {
+  transform: rotate(0deg) translate(15rem) rotate(-270deg);
+}
+.circlet > :nth-of-type(2) {
+  transform: rotate(45deg) translate(15rem) rotate(-315deg);
+}
+.circlet > :nth-of-type(3) {
+  transform: rotate(90deg) translate(15rem) rotate(-360deg);
+}
+.circlet > :nth-of-type(4) {
+  transform: rotate(135deg) translate(15rem) rotate(-405deg);
+}
+.circlet > :nth-of-type(5) {
+  transform: rotate(180deg) translate(15rem) rotate(-450deg);
+}
+.circlet > :nth-of-type(6) {
+  transform: rotate(225deg) translate(15rem) rotate(-495deg);
+}
+.circlet > :nth-of-type(7) {
+  transform: rotate(270deg) translate(15rem) rotate(-540deg);
+}
+.circlet > :nth-of-type(8) {
+  transform: rotate(315deg) translate(15rem) rotate(-585deg);
+}
+
+.circlet {
+  transform: rotate(0deg);
+  animation: circlet-rotate 45s linear infinite both;
+}
+
+@keyframes circlet-rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.circlet > :nth-of-type(1) {
+  transform: rotate(405deg) translate(15rem) rotate(-405deg);
+  animation: circlet-rotate-child-1 45s linear infinite both;
+}
+
+@keyframes circlet-rotate-child-1 {
+  to {
+    transform: rotate(405deg) translate(15rem) rotate(-765deg);
+  }
+}
+.circlet > :nth-of-type(2) {
+  transform: rotate(450deg) translate(15rem) rotate(-450deg);
+  animation: circlet-rotate-child-2 45s linear infinite both;
+}
+
+@keyframes circlet-rotate-child-2 {
+  to {
+    transform: rotate(450deg) translate(15rem) rotate(-810deg);
+  }
+}
+.circlet > :nth-of-type(3) {
+  transform: rotate(495deg) translate(15rem) rotate(-495deg);
+  animation: circlet-rotate-child-3 45s linear infinite both;
+}
+
+@keyframes circlet-rotate-child-3 {
+  to {
+    transform: rotate(495deg) translate(15rem) rotate(-855deg);
+  }
+}
+.circlet > :nth-of-type(4) {
+  transform: rotate(540deg) translate(15rem) rotate(-540deg);
+  animation: circlet-rotate-child-4 45s linear infinite both;
+}
+
+@keyframes circlet-rotate-child-4 {
+  to {
+    transform: rotate(540deg) translate(15rem) rotate(-900deg);
+  }
+}
+.circlet > :nth-of-type(5) {
+  transform: rotate(585deg) translate(15rem) rotate(-585deg);
+  animation: circlet-rotate-child-5 45s linear infinite both;
+}
+
+@keyframes circlet-rotate-child-5 {
+  to {
+    transform: rotate(585deg) translate(15rem) rotate(-945deg);
+  }
+}
+.circlet > :nth-of-type(6) {
+  transform: rotate(630deg) translate(15rem) rotate(-630deg);
+  animation: circlet-rotate-child-6 45s linear infinite both;
+}
+
+@keyframes circlet-rotate-child-6 {
+  to {
+    transform: rotate(630deg) translate(15rem) rotate(-990deg);
+  }
+}
+.circlet > :nth-of-type(7) {
+  transform: rotate(675deg) translate(15rem) rotate(-675deg);
+  animation: circlet-rotate-child-7 45s linear infinite both;
+}
+
+@keyframes circlet-rotate-child-7 {
+  to {
+    transform: rotate(675deg) translate(15rem) rotate(-1035deg);
+  }
+}
+.circlet > :nth-of-type(8) {
+  transform: rotate(720deg) translate(15rem) rotate(-720deg);
+  animation: circlet-rotate-child-8 45s linear infinite both;
+}
+
+@keyframes circlet-rotate-child-8 {
+  to {
+    transform: rotate(720deg) translate(15rem) rotate(-1080deg);
+  }
+}
+.circlet {
+  border: 0.25em dotted #0a5839;
+}
+
+.circlet-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: #fff;
+}
+
+.circlet-item img {
+  width: 100%;
+  height: auto;
+}
+
+.circlet-f-container {
+  position: absolute;
+  top: -315px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 91;
+}
+
+.circlet-f {
+  position: relative;
+  width: 50rem;
+  height: 50rem;
+  margin: 0;
+  padding: 0;
+  border-radius: 50%;
+  transform: rotate(270deg);
+}
+.circlet-f > * {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 12em;
+  height: 12em;
+  margin: -6em;
+}
+.circlet-f > :nth-of-type(1) {
+  transform: rotate(0deg) translate(25rem) rotate(-270deg);
+}
+.circlet-f > :nth-of-type(2) {
+  transform: rotate(30deg) translate(25rem) rotate(-300deg);
+}
+.circlet-f > :nth-of-type(3) {
+  transform: rotate(60deg) translate(25rem) rotate(-330deg);
+}
+.circlet-f > :nth-of-type(4) {
+  transform: rotate(90deg) translate(25rem) rotate(-360deg);
+}
+.circlet-f > :nth-of-type(5) {
+  transform: rotate(120deg) translate(25rem) rotate(-390deg);
+}
+.circlet-f > :nth-of-type(6) {
+  transform: rotate(150deg) translate(25rem) rotate(-420deg);
+}
+.circlet-f > :nth-of-type(7) {
+  transform: rotate(180deg) translate(25rem) rotate(-450deg);
+}
+.circlet-f > :nth-of-type(8) {
+  transform: rotate(210deg) translate(25rem) rotate(-480deg);
+}
+.circlet-f > :nth-of-type(9) {
+  transform: rotate(240deg) translate(25rem) rotate(-510deg);
+}
+.circlet-f > :nth-of-type(10) {
+  transform: rotate(270deg) translate(25rem) rotate(-540deg);
+}
+.circlet-f > :nth-of-type(11) {
+  transform: rotate(300deg) translate(25rem) rotate(-570deg);
+}
+.circlet-f > :nth-of-type(12) {
+  transform: rotate(330deg) translate(25rem) rotate(-600deg);
+}
+
+.circlet-f {
+  transform: rotate(0deg);
+  animation: circlet-f-rotate 120s linear infinite both;
+}
+
+@keyframes circlet-f-rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.circlet-f > :nth-of-type(1) {
+  transform: rotate(390deg) translate(25rem) rotate(-390deg);
+  animation: circlet-f-rotate-child-1 120s linear infinite both;
+}
+
+@keyframes circlet-f-rotate-child-1 {
+  to {
+    transform: rotate(390deg) translate(25rem) rotate(-750deg);
+  }
+}
+.circlet-f > :nth-of-type(2) {
+  transform: rotate(420deg) translate(25rem) rotate(-420deg);
+  animation: circlet-f-rotate-child-2 120s linear infinite both;
+}
+
+@keyframes circlet-f-rotate-child-2 {
+  to {
+    transform: rotate(420deg) translate(25rem) rotate(-780deg);
+  }
+}
+.circlet-f > :nth-of-type(3) {
+  transform: rotate(450deg) translate(25rem) rotate(-450deg);
+  animation: circlet-f-rotate-child-3 120s linear infinite both;
+}
+
+@keyframes circlet-f-rotate-child-3 {
+  to {
+    transform: rotate(450deg) translate(25rem) rotate(-810deg);
+  }
+}
+.circlet-f > :nth-of-type(4) {
+  transform: rotate(480deg) translate(25rem) rotate(-480deg);
+  animation: circlet-f-rotate-child-4 120s linear infinite both;
+}
+
+@keyframes circlet-f-rotate-child-4 {
+  to {
+    transform: rotate(480deg) translate(25rem) rotate(-840deg);
+  }
+}
+.circlet-f > :nth-of-type(5) {
+  transform: rotate(510deg) translate(25rem) rotate(-510deg);
+  animation: circlet-f-rotate-child-5 120s linear infinite both;
+}
+
+@keyframes circlet-f-rotate-child-5 {
+  to {
+    transform: rotate(510deg) translate(25rem) rotate(-870deg);
+  }
+}
+.circlet-f > :nth-of-type(6) {
+  transform: rotate(540deg) translate(25rem) rotate(-540deg);
+  animation: circlet-f-rotate-child-6 120s linear infinite both;
+}
+
+@keyframes circlet-f-rotate-child-6 {
+  to {
+    transform: rotate(540deg) translate(25rem) rotate(-900deg);
+  }
+}
+.circlet-f > :nth-of-type(7) {
+  transform: rotate(570deg) translate(25rem) rotate(-570deg);
+  animation: circlet-f-rotate-child-7 120s linear infinite both;
+}
+
+@keyframes circlet-f-rotate-child-7 {
+  to {
+    transform: rotate(570deg) translate(25rem) rotate(-930deg);
+  }
+}
+.circlet-f > :nth-of-type(8) {
+  transform: rotate(600deg) translate(25rem) rotate(-600deg);
+  animation: circlet-f-rotate-child-8 120s linear infinite both;
+}
+
+@keyframes circlet-f-rotate-child-8 {
+  to {
+    transform: rotate(600deg) translate(25rem) rotate(-960deg);
+  }
+}
+.circlet-f > :nth-of-type(9) {
+  transform: rotate(630deg) translate(25rem) rotate(-630deg);
+  animation: circlet-f-rotate-child-9 120s linear infinite both;
+}
+
+@keyframes circlet-f-rotate-child-9 {
+  to {
+    transform: rotate(630deg) translate(25rem) rotate(-990deg);
+  }
+}
+.circlet-f > :nth-of-type(10) {
+  transform: rotate(660deg) translate(25rem) rotate(-660deg);
+  animation: circlet-f-rotate-child-10 120s linear infinite both;
+}
+
+@keyframes circlet-f-rotate-child-10 {
+  to {
+    transform: rotate(660deg) translate(25rem) rotate(-1020deg);
+  }
+}
+.circlet-f > :nth-of-type(11) {
+  transform: rotate(690deg) translate(25rem) rotate(-690deg);
+  animation: circlet-f-rotate-child-11 120s linear infinite both;
+}
+
+@keyframes circlet-f-rotate-child-11 {
+  to {
+    transform: rotate(690deg) translate(25rem) rotate(-1050deg);
+  }
+}
+.circlet-f > :nth-of-type(12) {
+  transform: rotate(720deg) translate(25rem) rotate(-720deg);
+  animation: circlet-f-rotate-child-12 120s linear infinite both;
+}
+
+@keyframes circlet-f-rotate-child-12 {
+  to {
+    transform: rotate(720deg) translate(25rem) rotate(-1080deg);
+  }
+}
+.circlet-f {
+  border: 0.25em dotted #0a5839;
+}
+
+.circlet-f-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: #fff;
+}
+
+.circlet-f-item img {
+  width: 100%;
+  height: auto;
+}
+
+.circlet-la-container {
+  position: absolute;
+  top: -470px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 90;
+}
+
+.circlet-la {
+  position: relative;
+  width: 70rem;
+  height: 70rem;
+  margin: 0;
+  padding: 0;
+  border-radius: 50%;
+  transform: rotate(270deg);
+}
+.circlet-la > * {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 12em;
+  height: 12em;
+  margin: -6em;
+}
+.circlet-la > :nth-of-type(1) {
+  transform: rotate(0deg) translate(35rem) rotate(-270deg);
+}
+.circlet-la > :nth-of-type(2) {
+  transform: rotate(22.5deg) translate(35rem) rotate(-292.5deg);
+}
+.circlet-la > :nth-of-type(3) {
+  transform: rotate(45deg) translate(35rem) rotate(-315deg);
+}
+.circlet-la > :nth-of-type(4) {
+  transform: rotate(67.5deg) translate(35rem) rotate(-337.5deg);
+}
+.circlet-la > :nth-of-type(5) {
+  transform: rotate(90deg) translate(35rem) rotate(-360deg);
+}
+.circlet-la > :nth-of-type(6) {
+  transform: rotate(112.5deg) translate(35rem) rotate(-382.5deg);
+}
+.circlet-la > :nth-of-type(7) {
+  transform: rotate(135deg) translate(35rem) rotate(-405deg);
+}
+.circlet-la > :nth-of-type(8) {
+  transform: rotate(157.5deg) translate(35rem) rotate(-427.5deg);
+}
+.circlet-la > :nth-of-type(9) {
+  transform: rotate(180deg) translate(35rem) rotate(-450deg);
+}
+.circlet-la > :nth-of-type(10) {
+  transform: rotate(202.5deg) translate(35rem) rotate(-472.5deg);
+}
+.circlet-la > :nth-of-type(11) {
+  transform: rotate(225deg) translate(35rem) rotate(-495deg);
+}
+.circlet-la > :nth-of-type(12) {
+  transform: rotate(247.5deg) translate(35rem) rotate(-517.5deg);
+}
+.circlet-la > :nth-of-type(13) {
+  transform: rotate(270deg) translate(35rem) rotate(-540deg);
+}
+.circlet-la > :nth-of-type(14) {
+  transform: rotate(292.5deg) translate(35rem) rotate(-562.5deg);
+}
+.circlet-la > :nth-of-type(15) {
+  transform: rotate(315deg) translate(35rem) rotate(-585deg);
+}
+.circlet-la > :nth-of-type(16) {
+  transform: rotate(337.5deg) translate(35rem) rotate(-607.5deg);
+}
+
+.circlet-la {
+  transform: rotate(0deg);
+  animation: circlet-la-rotate 320s linear infinite both;
+}
+
+@keyframes circlet-la-rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.circlet-la > :nth-of-type(1) {
+  transform: rotate(382.5deg) translate(35rem) rotate(-382.5deg);
+  animation: circlet-la-rotate-child-1 320s linear infinite both;
+}
+
+@keyframes circlet-la-rotate-child-1 {
+  to {
+    transform: rotate(382.5deg) translate(35rem) rotate(-742.5deg);
+  }
+}
+.circlet-la > :nth-of-type(2) {
+  transform: rotate(405deg) translate(35rem) rotate(-405deg);
+  animation: circlet-la-rotate-child-2 320s linear infinite both;
+}
+
+@keyframes circlet-la-rotate-child-2 {
+  to {
+    transform: rotate(405deg) translate(35rem) rotate(-765deg);
+  }
+}
+.circlet-la > :nth-of-type(3) {
+  transform: rotate(427.5deg) translate(35rem) rotate(-427.5deg);
+  animation: circlet-la-rotate-child-3 320s linear infinite both;
+}
+
+@keyframes circlet-la-rotate-child-3 {
+  to {
+    transform: rotate(427.5deg) translate(35rem) rotate(-787.5deg);
+  }
+}
+.circlet-la > :nth-of-type(4) {
+  transform: rotate(450deg) translate(35rem) rotate(-450deg);
+  animation: circlet-la-rotate-child-4 320s linear infinite both;
+}
+
+@keyframes circlet-la-rotate-child-4 {
+  to {
+    transform: rotate(450deg) translate(35rem) rotate(-810deg);
+  }
+}
+.circlet-la > :nth-of-type(5) {
+  transform: rotate(472.5deg) translate(35rem) rotate(-472.5deg);
+  animation: circlet-la-rotate-child-5 320s linear infinite both;
+}
+
+@keyframes circlet-la-rotate-child-5 {
+  to {
+    transform: rotate(472.5deg) translate(35rem) rotate(-832.5deg);
+  }
+}
+.circlet-la > :nth-of-type(6) {
+  transform: rotate(495deg) translate(35rem) rotate(-495deg);
+  animation: circlet-la-rotate-child-6 320s linear infinite both;
+}
+
+@keyframes circlet-la-rotate-child-6 {
+  to {
+    transform: rotate(495deg) translate(35rem) rotate(-855deg);
+  }
+}
+.circlet-la > :nth-of-type(7) {
+  transform: rotate(517.5deg) translate(35rem) rotate(-517.5deg);
+  animation: circlet-la-rotate-child-7 320s linear infinite both;
+}
+
+@keyframes circlet-la-rotate-child-7 {
+  to {
+    transform: rotate(517.5deg) translate(35rem) rotate(-877.5deg);
+  }
+}
+.circlet-la > :nth-of-type(8) {
+  transform: rotate(540deg) translate(35rem) rotate(-540deg);
+  animation: circlet-la-rotate-child-8 320s linear infinite both;
+}
+
+@keyframes circlet-la-rotate-child-8 {
+  to {
+    transform: rotate(540deg) translate(35rem) rotate(-900deg);
+  }
+}
+.circlet-la > :nth-of-type(9) {
+  transform: rotate(562.5deg) translate(35rem) rotate(-562.5deg);
+  animation: circlet-la-rotate-child-9 320s linear infinite both;
+}
+
+@keyframes circlet-la-rotate-child-9 {
+  to {
+    transform: rotate(562.5deg) translate(35rem) rotate(-922.5deg);
+  }
+}
+.circlet-la > :nth-of-type(10) {
+  transform: rotate(585deg) translate(35rem) rotate(-585deg);
+  animation: circlet-la-rotate-child-10 320s linear infinite both;
+}
+
+@keyframes circlet-la-rotate-child-10 {
+  to {
+    transform: rotate(585deg) translate(35rem) rotate(-945deg);
+  }
+}
+.circlet-la > :nth-of-type(11) {
+  transform: rotate(607.5deg) translate(35rem) rotate(-607.5deg);
+  animation: circlet-la-rotate-child-11 320s linear infinite both;
+}
+
+@keyframes circlet-la-rotate-child-11 {
+  to {
+    transform: rotate(607.5deg) translate(35rem) rotate(-967.5deg);
+  }
+}
+.circlet-la > :nth-of-type(12) {
+  transform: rotate(630deg) translate(35rem) rotate(-630deg);
+  animation: circlet-la-rotate-child-12 320s linear infinite both;
+}
+
+@keyframes circlet-la-rotate-child-12 {
+  to {
+    transform: rotate(630deg) translate(35rem) rotate(-990deg);
+  }
+}
+.circlet-la > :nth-of-type(13) {
+  transform: rotate(652.5deg) translate(35rem) rotate(-652.5deg);
+  animation: circlet-la-rotate-child-13 320s linear infinite both;
+}
+
+@keyframes circlet-la-rotate-child-13 {
+  to {
+    transform: rotate(652.5deg) translate(35rem) rotate(-1012.5deg);
+  }
+}
+.circlet-la > :nth-of-type(14) {
+  transform: rotate(675deg) translate(35rem) rotate(-675deg);
+  animation: circlet-la-rotate-child-14 320s linear infinite both;
+}
+
+@keyframes circlet-la-rotate-child-14 {
+  to {
+    transform: rotate(675deg) translate(35rem) rotate(-1035deg);
+  }
+}
+.circlet-la > :nth-of-type(15) {
+  transform: rotate(697.5deg) translate(35rem) rotate(-697.5deg);
+  animation: circlet-la-rotate-child-15 320s linear infinite both;
+}
+
+@keyframes circlet-la-rotate-child-15 {
+  to {
+    transform: rotate(697.5deg) translate(35rem) rotate(-1057.5deg);
+  }
+}
+.circlet-la > :nth-of-type(16) {
+  transform: rotate(720deg) translate(35rem) rotate(-720deg);
+  animation: circlet-la-rotate-child-16 320s linear infinite both;
+}
+
+@keyframes circlet-la-rotate-child-16 {
+  to {
+    transform: rotate(720deg) translate(35rem) rotate(-1080deg);
+  }
+}
+.circlet-la {
+  border: 0.25em dotted #0a5839;
+}
+
+.circlet-la-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: #fff;
+}
+
+.circlet-la-item img {
+  width: 100%;
+  height: auto;
+}
+
+/*# sourceMappingURL=circlet.css.map */

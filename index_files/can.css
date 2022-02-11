@@ -1,0 +1,482 @@
+.fixed {
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    height: 60px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.carousel-inner {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.logotext {
+    text-align: center;
+    color: #fff;
+    background: #0b5739;
+    line-height: 23px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #063c27;
+    min-height: 60px;
+    padding-top: 5px;
+    vertical-align: middle;
+    align-items: center;
+    display: inline-grid;
+    width: 100%;
+}
+
+
+.max1000 {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+.social-contact {
+    margin-top: 30px;
+}
+
+.infocc {
+    padding: 10px;
+}
+
+.infocc h3 {
+    color: #f4783d;
+}
+
+.contact h1 {
+    color: #0a5839;
+    margin-bottom: 10px;
+}
+
+.social-contact a {
+    color: #c1c1c1;
+    font-size: 22px;
+    padding: 10px;
+}
+
+.max800 {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+
+.numberbox {
+    background: #ffffff;
+    color: #f4783d;
+    width: 250px;
+    height: 250px;
+    border-radius: 500px;
+    border: 5px solid #d86731;
+    align-items: center;
+    display: grid;
+    padding-top: 70px;
+    padding-bottom: 20px;
+}
+
+.numberbox .numb {
+    font-size: 60px;
+}
+
+#aboutnumber {
+    background: #f4783d;
+}
+
+#leadership {
+    background: #fafafa;
+}
+
+#leadership h2 {
+    font-size: 3rem;
+    color: #0a5839;
+}
+
+#leadership p {
+    max-width: 700px;
+    margin: 30px auto 15px;
+    font-size: 1.1em;
+}
+
+
+/* about */
+
+.navbar-brand {
+    max-width: 280px;
+    height: auto;
+}
+
+.navbar-brand img {
+    width: 100%;
+    height: auto;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    color: #0c5738;
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:hover {
+    color: #f4783d;
+
+}
+
+.navbar-expand-lg .navbar-nav .nav-item {
+    padding-right: 20px;
+}
+
+.navbar-expand-lg .navbar-nav .nav-item:last-of-type {
+    padding: 0 !important;
+}
+
+
+.banner-container {
+    width: 100%;
+    max-width: 1200px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.bkgd-image-style {
+    position: relative;
+    width: 100%;
+}
+
+.video-wrapper {
+    width: 49.6%;
+    position: relative;
+    top: 0px;
+    height: auto;
+}
+
+a.play-pause-button {
+    width: 50px;
+    height: 50px;
+}
+
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.embed-container iframe, .embed-container object, .embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.embed-container:hover + .video-control {
+    opacity: 0.5;
+}
+
+.embed-container iframe #player .controls-wrapper {
+    display: none;
+}
+
+/* video button style */
+.video-control {
+    opacity: 0;
+    position: absolute;
+    width: 22.5%;
+    height: 40%;
+    top: 31%;
+    left: 38%;
+    transition: opacity 0.3s;
+}
+
+.video-control:hover {
+    opacity: 1;
+}
+
+.video-control:before, .video-control:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    max-width: 131px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: block;
+    position: absolute;
+}
+
+.video-control:before {
+    background-image: url("http://joekang.co/assets/image-hosting/video-buttons-black.png");
+    background-position: 53% 98%;
+    background-size: 332%;
+    /*content: "\ea1c";*/
+}
+
+.video-control:after {
+    background-image: url("http://joekang.co/assets/image-hosting/video-buttons-black.png");
+    background-position: -292px -292px;
+    background-size: 332%;
+    /*content: "\ea1d";*/
+}
+
+.video-control.paused:after, .video-control.playing:before {
+    opacity: 0;
+}
+
+.video-control-show {
+    opacity: 0.5;
+}
+
+/* audio button style */
+.audio-control {
+    opacity: 1;
+    position: absolute;
+    width: 6%;
+    height: 9%;
+    bottom: 3%;
+    left: 2%;
+    transition: opacity 0.3s;
+}
+
+.audio-control:hover {
+    opacity: 1;
+}
+
+.audio-control:before, .audio-control:after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    max-width: 36px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: block;
+}
+
+.audio-control:before {
+    background-image: url("http://joekang.co/assets/image-hosting/video-buttons-black.png");
+    background-position: -1% -2%;
+    background-size: 254%;
+}
+
+.audio-control:after {
+    background-image: url("http://joekang.co/assets/image-hosting/video-buttons-black.png");
+    background-position: 69% -1%;
+    background-size: 254%;
+}
+
+.audio-control.unmuted:after, .audio-control.muted:before {
+    opacity: 0;
+}
+
+.sidebarfix {
+    position: fixed;
+    max-width: 315px;
+}
+
+.title-wrapper {
+    text-align: center;
+    margin: 3% 0;
+    font-size: 2.5vw;
+}
+
+.title-wrapper span {
+    color: #fff;
+}
+
+.servicesacc h3 {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.servicesacc {
+    margin-top: 30px;
+}
+
+.servicesacc .btn-link {
+    font-size: 1.75rem;
+    color: #0a5839;
+    width: 100%;
+    text-align: left;
+    padding: 10px 20px;
+}
+
+.servicesacc .btn-link:hover {
+    text-decoration: none;
+    color: #0a5839;
+}
+
+.card-header {
+    padding: 0;
+}
+
+.servicesacc .btn-link span {
+    float: right;
+}
+
+.footerform {
+    max-width: 800px;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.footerform .gform_footer {
+    margin-top: 0;
+    text-align: center;
+}
+
+
+
+button.close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 999;
+}
+
+.modal-body a {
+    margin-top: 10px;
+}
+
+.modal-body {
+    margin-top: 10px;
+}
+
+.modal-dialog {
+    max-width: 800px;
+}
+
+#aboutnumber h2 {
+    color: #fff;
+    font-size: 3rem;
+    padding-bottom: 10px;
+}
+
+#aboutnumber p {
+    max-width: 800px;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 18px;
+}
+
+/* mobile */
+@media (max-width: 768px) {
+    #activate-community h2 {
+        font-size: 2rem;
+    }
+
+    .hero-text h1 span {
+        font-size: 31px;
+    }
+
+    .hero-text h1 {
+        font-size: 30px;
+        line-height: 45px;
+    }
+
+    .h3, h3 {
+        font-size: 1.2rem;
+    }
+
+    .image-box .overlay-text {
+        top: 40%;
+        text-shadow: 0px 2px 1px #000;
+        height: 60%;
+        width: 90%;
+        font-size: 30px;
+    }
+
+    #communities .intro-text h2 {
+        font-size: 2rem;
+    }
+
+    #messaging h2 span {
+        font-size: 2rem;
+    }
+
+    .servicesacc .btn-link {
+        font-size: 1.3rem;
+    }
+
+    .navbar-brand img {
+        width: 70%;
+        height: auto;
+    }
+
+    .navbar-brand {
+        max-width: 250px;
+        height: auto;
+        float: left;
+    }
+
+    .navbar-toggler {
+
+        position: relative;
+        float: left;
+    }
+
+
+
+    .green-bg .iconhc img {
+        width: 150px;
+        margin-bottom: 10px;
+    }
+
+    .gform_wrapper .top_label li.gfield.gf_left_half {
+        padding-right: 0px !important;
+    }
+
+    .navbar-expand-lg .navbar-nav .nav-item {
+        padding-right: 0;
+    }
+
+    .navbar-collapse {
+
+        text-align: center;
+        background: #fafafa;
+    }
+
+    .navbar-nav .nav-link {
+        padding-right: 0;
+        padding-left: 0;
+        border-bottom: 1px solid #e4e4e4;
+    }
+
+    .services-tabs {
+
+        margin-bottom: 30px;
+    }
+
+
+    .community-logos {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    footer ul {
+        padding: 0;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    .social {
+        text-align: center;
+        float: none;
+        display: -webkit-inline-box;
+    }
+
+    .content-title h1 {
+        font-size: 2rem;
+    }
+
+    .servicesacc {
+        margin-bottom: 30px;
+    }
+}
